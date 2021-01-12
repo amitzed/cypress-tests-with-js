@@ -15,7 +15,7 @@ describe('Form Testing Suite', () => {
     cy.get('button').should('contain', 'SEND');
 
     cy.get('form').submit();
-    
+
     cy.get('#second-page-link').click().url().should('contain', '/secondPage');
   });
 
